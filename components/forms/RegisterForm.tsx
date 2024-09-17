@@ -10,7 +10,7 @@ import SubmitButton from "../SubmitButton";
 import { useState } from "react";
 import { PatientFormValidation } from "@/lib/validation";
 import { useRouter } from "next/navigation";
-import { createUser, registerPatient } from "@/lib/actions/patient.actions";
+import { registerPatient } from "@/lib/actions/patient.actions";
 import { FormFieldType } from "./PatientForm";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import {
@@ -71,6 +71,8 @@ const RegisterForm = ({ user }: { user: User }) => {
     } catch (error) {
       console.log(error);
     }
+
+    setIsLoading(false);
   }
 
   return (
@@ -143,7 +145,10 @@ const RegisterForm = ({ user }: { user: User }) => {
                   {GenderOptions.map((option) => (
                     <div key={option} className="radio-group">
                       <RadioGroupItem value={option} id={option} />
-                      <Label htmlFor={option} className="capitalize cursor-pointer">
+                      <Label
+                        htmlFor={option}
+                        className="capitalize cursor-pointer"
+                      >
                         {option}
                       </Label>
                     </div>
@@ -338,7 +343,7 @@ const RegisterForm = ({ user }: { user: User }) => {
           label="I consent to the collection and use of my data according to the privacy policy."
         />
 
-        <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
+        <SubmitButton isLoading={isLoading}>Get Registered</SubmitButton>
       </form>
     </Form>
   );
