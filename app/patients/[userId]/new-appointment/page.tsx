@@ -5,8 +5,8 @@ import Image from "next/image";
 export default async function NewAppointment({
   params: { userId },
 }: SearchParamProps) {
-    const patient = await getPatient(userId);
-    
+  const patient = await getPatient(userId);
+
   return (
     <div className="flex h-screen max-h-screen">
       <section className="container my-auto remove-scrollbar">
@@ -19,15 +19,14 @@ export default async function NewAppointment({
             className="h-10 mb-12 w-fit"
           />
 
-          <AppointmentForm 
+          <AppointmentForm
             type="create"
             userId={userId}
             patientId={patient.$id}
+            setOpen={() => {}} // INFO: No need to set open
           />
 
-          <p className="copyright mt-10 py-12">
-            © 2024 CareSync
-          </p>
+          <p className="copyright mt-10 py-12">© 2024 CareSync</p>
         </div>
       </section>
 
