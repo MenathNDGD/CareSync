@@ -4,16 +4,14 @@
         <img src="public/assets/icons/logo-full.png" alt="CareSync">
       </a>
   <br />
-  <br/>
   <h1 align="center">A HealthCare Management System</h1>
-  <br/>
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
   </div>
-
+  <br/>
    <div align="center">
      CareSync is a modern Patient Management System built with React, Next.js, TailwindCSS, shadcn UI, Appwrite, Sentry, and Twilio. It streamlines patient care by managing appointments, records, and communication, offering real-time notifications and secure data handling.
     </div>
