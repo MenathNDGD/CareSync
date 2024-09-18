@@ -33,12 +33,16 @@ CareSync is a modern health management platform designed to connect patients and
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Next.js
-- Appwrite
-- Typescript
-- TailwindCSS
-- ShadCN
-- Twilio
+Our project leverages a modern and robust tech stack to deliver a seamless experience:
+
+- **Next.js**: A powerful React framework for server-side rendering and static site generation.
+- **Appwrite**: An open-source backend server to manage database, authentication, and more.
+- **TypeScript**: Adds type safety and clarity to our JavaScript code.
+- **TailwindCSS**: A utility-first CSS framework for fast and responsive design.
+- **ShadCN**: A tool for creating accessible and stylish UI components.
+- **Twilio**: A cloud communications platform for SMS, voice, and video integration.
+
+Explore how these technologies come together to power our project!
 
 ## <a name="features">🔋 Features</a>
 
